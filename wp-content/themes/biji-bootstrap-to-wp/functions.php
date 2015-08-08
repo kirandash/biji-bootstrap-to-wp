@@ -61,4 +61,7 @@ create_widget('Front Page Right', 'front-right' , 'Displays on the right of the 
 
 create_widget('Page sidebar', 'page', 'Displays on the page sidebar');
 
+create_widget('Blog sidebar', 'blog', 'Displays on the page with blog layout');
+
+
 ?>
