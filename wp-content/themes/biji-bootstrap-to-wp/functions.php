@@ -27,6 +27,15 @@ add_action('wp_enqueue_scripts', 'biji_theme_js');
 
 //add_filter('show_admin_bar', '__return_false');
 
+add_theme_support('menus');
+add_theme_support('post-thumbnails');
+
+$args = array(
+		'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+    );
+
+register_post_type( 'portfolio', $args );
+
 function register_theme_menus() {
 	
 	register_nav_menus(
